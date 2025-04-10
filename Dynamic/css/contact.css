@@ -1,0 +1,113 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0d1117; /* Match dark background */
+    color: #e0e0e0; /* Light text color */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 2em;
+    background-color: #161b22; /* Match header background */
+    border-bottom: 1px solid #333;
+}
+
+header .logo img {
+    height: 40px;
+    display: block;
+    border-radius: 2em; /* Rounded corners for logo */
+}
+
+header .nav-links a {
+    text-decoration: none;
+    color: #c9d1d9; /* Match light text color */
+    margin-left: 1em;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+header .nav-links a:hover {
+    color: #ffffff; /* White text on hover */
+}
+
+.contact {
+    max-width: 800px;
+    margin: 2em auto;
+    padding: 2em;
+    background-color: #161b22; /* Match card background */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.contact h2 {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 1em;
+    text-align: center;
+    color: #ffffff; /* White text */
+}
+
+.contact p {
+    text-align: center;
+    margin-bottom: 2em;
+    color: #b0b0b0; /* Subtle gray text */
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+.contact form label {
+    font-weight: bold;
+    margin-bottom: 0.5em;
+    color: #e0e0e0; /* Light text color */
+}
+
+.contact form input,
+.contact form select,
+.contact form textarea {
+    width: 100%;
+    padding: 0.8em;
+    border: 1px solid #333; /* Match border color */
+    border-radius: 5px;
+    font-size: 1em;
+    background-color: #0d1117; /* Match input background */
+    color: #e0e0e0; /* Light text color */
+}
+
+.contact form input[type="file"] {
+    padding: 0.5em;
+}
+
+.contact form button {
+    width: 150px;
+    padding: 0.8em;
+    background-color: #3b82f6; /* Match vibrant blue */
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1em;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.contact form button:hover {
+    background-color: #2563eb; /* Darker blue on hover */
+    transform: scale(1.05); /* Slight scale effect */
+}
+
+footer {
+    text-align: center;
+    padding: 1em;
+    background-color: #161b22; /* Match footer background */
+    color: #8b949e; /* Subtle gray text */
+    font-size: 0.9em;
+    margin-top: 2em;
+}

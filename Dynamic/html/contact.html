@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="../css/contact.css"> <!-- Corrected path to contact.css -->
+    <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="../Images/logo.png" alt="Logo"> <!-- Adjusted path for the logo -->
+        </div>
+        <nav class="nav-links">
+            <a href="../index.html">Home</a>
+            <a href="influencers.html">Influencers</a>
+            <a href="contact.html">Contact</a>
+            <a href="photos.html">Photos</a>
+            
+        </nav>
+    </header>
+
+    <section class="contact">
+        <h2>Submit a Request</h2>
+        <p>Fields marked with an asterisk (*) are required.</p>
+        <form action="https://formspree.io/f/{your-form-id}" method="POST"> <!-- Replace {your-form-id} -->
+            <label for="email">Your Email Address*</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="username">Roblox Username*</label>
+            <input type="text" id="username" name="username" placeholder="Type in your Roblox Username" required>
+
+            <label for="support-type">Support Type*</label>
+            <select id="support-type" name="support-type" required>
+                <option value="general">General Support</option>
+                <option value="technical">Technical Support</option>
+                <option value="billing">Billing</option>
+            </select>
+
+            <label for="subject">Subject*</label>
+            <input type="text" id="subject" name="subject" placeholder="Enter the subject" required>
+
+            <label for="description">Description*</label>
+            <textarea id="description" name="description" rows="5" placeholder="Please enter the details of your request. A member of our support staff will respond as soon as possible." required></textarea>
+
+            <label for="attachments">Attachments</label>
+            <input type="file" id="attachments" name="attachments" multiple>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>Město Zlín</p>
+    </footer>
+</body>
+</html>

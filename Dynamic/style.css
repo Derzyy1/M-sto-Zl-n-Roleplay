@@ -1,0 +1,361 @@
+/* ! General Dark Mode Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #0d1117; /* Dark background */
+    color: #e0e0e0; /* Light text color */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit; /* Inherit box-sizing from body */
+}
+
+/* ! Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 2em;
+    background-color: #161b22; /* Match header background */
+    border-bottom: 1px solid #333;
+}
+
+header .logo img {
+    height: 40px;
+    display: block;
+    border-radius: 2em; /* Rounded corners for logo */
+}
+
+header .nav-links a {
+    text-decoration: none;
+    color: #c9d1d9; /* Match light text color */
+    margin-left: 1em;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+header .nav-links a:hover {
+    color: #ffffff; /* White text on hover */
+}
+
+header .social-icons a {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px; /* Smaller width */
+    height: 40px; /* Smaller height */
+    border-radius: 50%;
+    text-decoration: none;
+    transition: 0.25s;
+    overflow: hidden;
+}
+
+header .social-icons svg {
+    width: 60%; /* Adjust icon size */
+    height: 60%;
+    transition: transform 0.25s ease, filter 0.25s ease;
+}
+
+/* ? Authentication Buttons */
+header .auth-buttons {
+    display: flex;
+    gap: 1em;
+    margin-left: auto; /* Push auth buttons to the far right */
+}
+
+header .auth-buttons a {
+    text-decoration: none;
+    font-size: 0.9em;
+    font-weight: 500;
+    padding: 0.5em 1em;
+    border-radius: 6px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+header .auth-buttons .login {
+    color: #c9d1d9;
+}
+
+header .auth-buttons .signup {
+    background-color: #3b82f6;
+    color: #ffffff;
+}
+
+header .auth-buttons .signup:hover {
+    background-color: #2563eb;
+}
+
+/* ! Hero Section */
+.hero {
+    text-align: center;
+    padding: 3em 1em;
+    background: url('Images/hero-background.jpg') no-repeat center center/cover;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    font-weight: 800; /* Ensure bold font */
+    font-family: 'Inter', sans-serif;
+    margin-bottom: 0.5em;
+    background: linear-gradient(to right, #00246B, #CADDFC);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 1.5em;
+    color: #d1d5db;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+
+.hero-buttons .play-button,
+.hero-buttons .watch-button {
+    padding: 0.8em 1.5em;
+    font-size: 1em;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.hero-buttons .play-button {
+    background-color: #3b82f6;
+    color: white;
+}
+
+.hero-buttons .play-button:hover {
+    background-color: #2563eb;
+    transform: scale(1.05);
+}
+
+.hero-buttons .watch-button {
+    background-color: #6b7280;
+    color: white;
+}
+
+.hero-buttons .watch-button:hover {
+    background-color: #4b5563;
+    transform: scale(1.05);
+}
+
+/* Footer Section Styles */
+footer {
+    text-align: center;
+    padding: 1em;
+    background-color: #161b22;
+    color: #8b949e; /* Subtle gray text */
+    font-size: 0.9em;
+    margin-top: auto; /* Push footer to the bottom of the page */
+}
+
+/* ! Game Stats Section */
+.game-stats {
+    text-align: center;
+    padding: 2em 1em;
+    background-color: #0d1117;
+    border-top: 1px solid #333;
+}
+
+/* ? Game Stats Headings */
+.game-stats h2 {
+    font-size: 1.8em;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+    color: #ffffff; /* White text */
+}
+
+/* ? Game Stats Paragraph */
+.game-stats p {
+    font-size: 1em;
+    color: #b0b0b0;
+    margin-bottom: 2em;
+}
+
+.stats-container {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    flex-wrap: wrap;
+}
+
+.stat {
+    background-color: #161b22;
+    padding: 1em 2em;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    min-width: 120px;
+}
+
+.stat-value {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #3b82f6; /* Vibrant blue text */
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+.stat-label {
+    font-size: 0.9em;
+    color: #b0b0b0;
+}
+
+/* ! Team Section */
+.team {
+    text-align: center;
+    padding: 2em 1em;
+    background-color: #0d1117;
+}
+
+.team h2 {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 1em;
+    color: #ffffff; /* White text */
+}
+
+.team-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2em;
+}
+
+.team-member {
+    text-align: center;
+    max-width: 200px;
+    background-color: #161b22; /* Card background */
+    padding: 1em;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-member:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.team-member img.avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 0.5em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.team-member h3 {
+    font-size: 1.2em;
+    margin-bottom: 0.5em;
+    color: #ffffff; /* White text */
+}
+
+.team-member .role {
+    font-size: 0.9em;
+    color: #ffffff; /* White text for roles */
+    margin-bottom: 1em;
+}
+
+.team-member .profile-link {
+    text-decoration: none;
+    color: #b0b0b0;
+    font-size: 0.9em;
+    transition: color 0.3s ease;
+}
+
+.team-member .profile-link:hover {
+    color: #3b82f6; /* Vibrant blue on hover */
+}
+
+/* ! Social Media Icons */
+.card {
+    display: flex;
+    gap: 0.8em; /* Adjust spacing between icons */
+    justify-content: center;
+    align-items: center;
+    height: 60px; /* Adjust height of the container */
+    width: 220px; /* Adjust width of the container */
+}
+
+/* ? Social Media Links */
+.card a {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px; /* Smaller width */
+    height: 50px; /* Smaller height */
+    border-radius: 50%;
+    text-decoration: none;
+    transition: 0.25s;
+    overflow: hidden;
+}
+
+/* ? Social Media SVG Icons */
+.card svg {
+    width: 40%; /* Smaller icon size */
+    height: 40%; /* Smaller icon size */
+    transition: transform 0.25s ease, filter 0.25s ease;
+}
+
+/* ! Hover Effects for Social Media Links */
+.card .social-link1:hover {
+    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+    animation: bounce_613 0.4s linear;
+}
+
+.card .social-link2:hover {
+    background-color: #00ccff;
+    animation: bounce_613 0.4s linear;
+}
+
+.card .social-link3:hover {
+    background-color: #5865f2;
+    animation: bounce_613 0.4s linear;
+}
+
+.card .social-link4:hover {
+    background-color: #12a50b;
+    animation: bounce_613 0.4s linear;
+}
+
+/* ! Bounce Animation */
+@keyframes bounce_613 {
+    40% {
+        transform: scale(1.4);
+    }
+    60% {
+        transform: scale(0.8);
+    }
+    80% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/** Text Gradient Example */ 
+.text-gradient {
+    color: #00246B; 
+    background-image: linear-gradient(45deg, #00246B 40%, #CADDFC 85%); 
+    background-clip: text; 
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent; 
+   }

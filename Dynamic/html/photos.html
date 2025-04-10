@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery</title>
+    <link rel="stylesheet" href="../css/photos.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="../Images/logo.png" alt="Logo">
+        </div>
+        <nav class="nav-links">
+            <a href="../index.html">Home</a>
+            <a href="influencers.html">Influencers</a>
+            <a href="contact.html">Contact</a>
+            <a href="photos.html">Photos</a>
+        </nav>
+</header>
+<h2 style="text-align: center; font-size: 2em; margin-bottom: 1em;">Photos from our community</h2>
+<section>
+        <!-- Photos from Community folder -->
+        <div class="photo" data-caption="zdrahalovci13">
+            <img src="../Images/Community/Christmas.png" alt="Community Photo 1">
+        </div>
+        <div class="photo" data-caption="zdrahalovci13">
+            <img src="../Images/Community/image.png" alt="Community Photo 2">
+        </div>
+        <div class="photo" data-caption="Community Photo 2">
+            <img src="../Images/Community/heli.png" alt="Community Photo 2">
+        </div>
+        <div class="photo" data-caption="Community Photo 2">
+            <img src="../Images/Community/nevim.png" alt="Community Photo 2">
+        </div>
+        <div class="photo" data-caption="Community Photo 2">
+            <img src="../Images/Community/idk.png" alt="Community Photo 2">
+        </div>
+        <div class="photo" data-caption="Community Photo 2">
+            <img src="../Images/Community/tuning.png" alt="Community Photo 2">
+        </div>
+        <div class="photo" data-caption="Community Photo 2">
+            <img src="../Images/Community/testt.png" alt="Community Photo 2">
+        </div>
+        <div class="photo" data-caption="Community Photo 2">
+            <img src="../Images/Community/volvo.png" alt="Community Photo 2">
+        </div>
+</section>
+
+    <div class="photo-overlay">
+        <img src="" alt="Expanded Photo">
+    </div>
+
+    <footer style="text-align: center; padding: 1em 0; background-color: #161b22; color: #c9d1d9; margin-top: 2em;">
+        Copyright © <span id="current-year"></span> Město Zlín. All rights reserved.
+    </footer>
+
+    <script>
+        const photos = document.querySelectorAll('.photo');
+        const overlay = document.querySelector('.photo-overlay');
+        const overlayImage = overlay.querySelector('img');
+
+        photos.forEach(photo => {
+            photo.addEventListener('click', () => {
+                overlayImage.src = photo.querySelector('img').src;
+                overlay.classList.add('active');
+            });
+        });
+
+        overlay.addEventListener('click', () => {
+            overlay.classList.remove('active');
+        });
+
+        // Set the current year in the footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

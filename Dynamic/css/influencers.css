@@ -1,0 +1,90 @@
+/* Influencers Page Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0d1117; /* Match dark background */
+    color: #e0e0e0; /* Light text color */
+}
+
+/* Header Section Styles */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 2em;
+    background-color: #161b22; /* Match header background */
+    border-bottom: 1px solid #333;
+}
+
+header .logo img {
+    height: 40px;
+    display: block;
+    border-radius: 2em; /* Rounded corners for logo */
+}
+
+header .nav-links a {
+    text-decoration: none;
+    color: #c9d1d9; /* Match light text color */
+    margin-left: 1em;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+header .nav-links a:hover {
+    color: #ffffff; /* White text on hover */
+}
+
+/* Video Section Styles */
+.video-section {
+    display: flex; /* Align videos in one line */
+    flex-direction: row; /* Horizontal layout */
+    justify-content: center; /* Center videos */
+    gap: 1.5em; /* Add spacing between videos */
+    padding: 2em;
+    background-color: #0d1117; /* Match page background */
+}
+
+.video-section .video {
+    flex: 1; /* Allow videos to adjust their size equally */
+    max-width: 300px; /* Limit the width of each video */
+    text-align: center; /* Center text inside each video block */
+    border: 1px solid #333; /* Add border for cleaner design */
+    border-radius: 8px; /* Rounded corners for videos */
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+.video-section .video iframe {
+    width: 100%;
+    height: 200px; /* Adjusted height for better layout */
+    display: block;
+}
+
+.text-secondary {
+    color: #8b949e; /* Subtle gray for secondary text */
+}
+
+.text-highlight {
+    color: #f78166; /* Orange for highlights */
+}
+
+/* General Cleanup */
+.container {
+    max-width: 1200px; /* Limit content width for cleaner layout */
+    margin: 0 auto;
+    padding: 1em;
+}
+
+/* * Konec Vrchu */
+
+/* Footer Section Styles */
+footer {
+    text-align: center;
+    padding: 1em;
+    background-color: #161b22;
+    color: #8b949e; /* Subtle gray text */
+    font-size: 0.9em;
+    margin-top: auto; /* Push footer to the bottom of the page */
+}
